@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: .8s;
+    font-family: "Roboto", sans-serif;
+  }
+.navbar a button{
+    border: none;
+    background-color: rgb(193, 183, 183);
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    padding: 12px;
+    cursor: pointer;
+}
+section h1{
+    font-size: 200px;
+    background: url("https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-clip: text;
+    color: transparent;
+    font-family: "Poppins", sans-serif;
+    
+}
+section h1 span{
+    float: right;
+    color: black;
+}
+section button{
+    border: none;
+    background-color: rgb(49, 32, 239);
+    color: white;
+    padding: 20px;
+    margin-left: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container h1{
+  font-family: "Poppins", sans-serif;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.navbar a:hover {
+    color: rgb(254, 254, 254);
+    font-family: "Roboto", sans-serif;
+}
+
+  @media screen and (max-width: 600px) {
+    .navbar{
+        flex-direction: column;
+        height: 20rem;   
+    }
+    .navbar a {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
